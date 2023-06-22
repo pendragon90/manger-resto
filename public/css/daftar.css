@@ -1,0 +1,145 @@
+:root {
+  --def: #ab223e;
+  --tema: #e2e3e5;
+}
+
+body {
+    display: flex;
+}
+
+form > * a {
+  text-decoration: none;
+  color: #212529;
+}
+
+form > * a:hover {
+  color: var(--def);
+}
+
+/* container */
+.container h2 {
+    color: var(--def);
+}
+/* container end */
+
+/* form */
+form {
+    background-color: white;
+    padding: 1rem;
+    border-radius: 1rem;
+    box-shadow: 0 4px 8px 0 #e2e3e5, 0 6px 20px 0 #e2e3e5;
+}
+
+.daftar a {
+    text-decoration: none;
+    color: #212529;
+}
+/* form end */
+
+/* gambar */
+.gambar {
+    height: 100vh;
+    overflow: hidden;
+}
+
+.gambar img {
+    width: 100%;
+    height: auto;
+}
+
+.konten {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background-color: #e2e3e5e1;
+    width: 40%;
+    height: 80%;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 8px 0 #0000003f, 0 6px 20px 0 #00000083;
+    
+}
+
+.konten h1 {
+    font-weight: bold;
+    color: var(--def);
+}
+
+.konten ul li {
+    list-style-type: none;
+    color: var(--def);
+    font-size: larger;
+}
+
+.konten p {
+    color: var(--def);
+    font-size: 1.3rem;
+    
+}
+
+.konten ul li::before {
+    content: '- ';
+}
+/* gambar end */
+
+/* tombol */
+.btn-primary {
+    border: 1px solid var(--def) !important;
+  border-radius: 1.5rem !important;
+  padding: 8px 1.3rem !important;
+  color: var(--def) !important;
+  background-color: transparent !important;
+}
+
+.btn-primary:hover {
+    background-color: var(--def) !important;
+    color: white !important;
+}
+/* tombol end */
+
+/* footer */
+.footer-login {
+    display: none;
+    background-color: var(--tema);
+}
+/* footer end */
+
+@media (max-width: 768px) {
+
+    body {
+flex-direction: column;
+    }
+
+    /* container */
+    .container.form {
+        width: 85% !important;
+    }
+    /* container end */
+
+    /* gambar */
+    .gambar {
+        display: none;
+    }
+    /* gambar end */
+
+    /* footer */
+    .footer-login {
+        text-align:justify;
+    display: flex;
+    margin: auto;
+    background-color: var(--tema);
+}
+
+.footer-login p {
+    padding-top: 1rem !important;
+}
+
+ul li {
+    list-style-type: none;
+}
+
+ul li::before {
+    content: '- ';
+}
+    /* footer end */
+}

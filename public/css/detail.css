@@ -1,0 +1,51 @@
+:root {
+    --def: #ab223e;
+    --tema: #e2e3e5;
+  }
+
+body {
+    background-color: var(--tema);
+}
+
+.container.detail {
+  background-color: white;
+}
+
+/* detail */
+.detail {
+  flex-direction: row;
+}
+
+.detail img {
+  width: 100% !important;
+}
+
+.tombol-pesan {
+  width: 100% !important;
+  display: flex;
+  flex-direction: column;
+}
+
+.tombol-pesan .btn {
+  width: 100%;
+}
+
+.body-detail {
+  margin-top: 1rem;
+}
+
+@media (max-width: 768px) {
+.detail {
+  flex-direction: column;
+}
+
+.body-detail {
+  width: 100% !important;
+}
+
+.tombol-pesan {
+  width: 100% !important;
+ 
+}
+
+}

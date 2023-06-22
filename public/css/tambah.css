@@ -1,0 +1,10 @@
+.tambah {
+    margin-top: 5rem;
+    max-width: 40%;
+}
+
+@media (max-width: 768px) {
+    .tambah {
+        max-width: 100%;
+    }
+}

@@ -1,0 +1,8 @@
+:root {
+  --def: #ab223e;
+  --tema: #e2e3e5;
+}
+
+    body {
+        background-color: var(--tema);
+    }

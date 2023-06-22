@@ -1,0 +1,61 @@
+    :root {
+      --def: #ab223e;
+      --tema: #e2e3e5;
+    }
+
+    body {
+      background-color: var(--tema);
+    }
+
+.container.menu {
+  padding-top: 8rem;
+}
+
+.container .menuKami {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.card.p {
+  margin: 1rem ;
+}
+
+.card:hover {
+  text-decoration: none;
+  transform: scale(1.1);
+  transition: ease-out 0.5s;
+}
+
+.card p, .card h4 {
+  color: black;
+}
+
+.shortcut {
+  background-color: var(--def);
+  color: white !important;
+  position: fixed;
+  z-index: 999;
+  bottom: 20px;
+  right: 20px;
+  width: max-content;
+}
+
+.shortcut:hover {
+  background-color: var(--tema) !important;
+  color: var(--def) !important;
+}
+
+.active {
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .card {
+    width: 10rem !important;
+  }
+
+  .card-text {
+    font-size: smaller;
+  }
+}
